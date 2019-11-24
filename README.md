@@ -3,10 +3,12 @@
 
 >1 从解析configuration文件
 >>1-1 使用XMLConfigurationBuilder处理environments节点>datasource;settings;plugins;typeAliases,....
+
 >>1-2 解析mappers节点>package 扫描 ；url,resource,class ; 使用XMLMapperBuilder处理mapper
 
 >2 解析mapper文件
 >>2-1 处理namespace,cache-ref,cache,parameterMap,resultMap,sql...
+
 >>2-2 解析mappedStatement 使用XMLStatementBuilder处理<select>等节点
 >>2-3 解析parameterType,resultType,
 >>2-4 处理SqlSource 使用XMLScriptBuilder 
